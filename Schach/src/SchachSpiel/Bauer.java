@@ -3,43 +3,38 @@ package SchachSpiel;
 import java.awt.Image;
 
 /**
- * Klasse: Bauer Die Klasse Bauer erbt von der abstrakten Klasse Schachfigur
+ * Klasse Bauer: Die Klasse Bauer erbt von der abstrakten Klasse Schachfigur
  * Stellt eine Figur aus dem Schachspiel dar
  * 
  * @author Julius Neimantas
  */
 public class Bauer extends Schachfigur {
-
+	/**
+	 * Variable posX: horisontale Position der Schachfigur
+	 */
 	public int posX;
+	/**
+	 * Variable posY: vertikale Position der Schachfigur
+	 */
 	public int posY;
+	/**
+	 * Variable isBlack: Farbe der Schachfigur
+	 */
 	boolean isBlack;
+	/**
+	 * Referenzvariable img: Referenz auf das dazugehörige Bild der Schachfigur
+	 */
 	public Image img;
-//	count besagt ob der Bauer zum Ersten mal  bewegt wird
+	/**
+	 * Variable count: besagt ob die Schachfigur zum Ersten mal bewegt wird
+	 */
 	public int count;
-
-	/**
-	 * Methode isBlack(): gibt die Farbe der Schachfigur zurueck
-	 */
-	public boolean isBlack() {
-		return isBlack;
-	}
-
-	/**
-	 * Methode setImg(): der Referenz img wird ein dazugehoeriges Bild zugewiesen
-	 */
-	public Image setImg(Image img) {
-		return this.img = img;
-	}
-	/**
-	 * Methode getImg(): Referenz zum dazugehoerigem Bild wird zurueckgegeben
-	 */
-	public Image getImg() {
-		return img;
-	}
 
 	/**
 	 * Die methode move() nimmt die Zielkoordinaten der Schachfigur entgegen und
 	 * prüft auf die Gültigkeit des Bewegungsmusters der Figur
+	 * @param x - horisontale Zielkoordinaten
+	 * @param y - vertikale Zielkoordinaten
 	 */
 	public int move(int x, int y) {
 		if (x == posX + 1 && y == posY && isBlack == false
@@ -70,7 +65,7 @@ public class Bauer extends Schachfigur {
 	}
 
 	/**
-	 * Beim Instanzieren der Schachfigur werden folgende Parameter definiert:
+	 * Beim Instanzieren der Schachfigur werden folgende Parameter instanziiert:
 	 * 
 	 * @param x - horizontale Position der Schachfigur
 	 * @param y - vertikale Position der Schachfigur
@@ -80,9 +75,7 @@ public class Bauer extends Schachfigur {
 		posX = x;
 		posY = y;
 		isBlack = f;
-
 	}
-
 
 	/**
 	 * Methode:getX() gibt die x-Koordinaten der Schachfigur zurück
@@ -99,13 +92,27 @@ public class Bauer extends Schachfigur {
 	}
 
 	/**
+	 * Methode getImg(): Referenz zum dazugehoerigem Bild wird zurueckgegeben
+	 */
+	public Image getImg() {
+		return img;
+	}
+
+	/**
+	 * Methode isBlack(): gibt die Farbe der Schachfigur zurueck
+	 */
+	@Override
+	public boolean isBlack() {
+		return isBlack;
+	}
+
+	/**
 	 * Methode:setY() ueberschreibt die Instanvariablen count und posY
 	 */
 	@Override
 	public void setY(int i) {
 		count = 0;
 		this.posY = i;
-
 	}
 
 	/**
@@ -117,4 +124,12 @@ public class Bauer extends Schachfigur {
 		this.posX = i;
 
 	}
+
+	/**
+	 * Methode setImg(): der Referenz img wird ein dazugehoeriges Bild zugewiesen
+	 */
+	public Image setImg(Image img) {
+		return this.img = img;
+	}
+
 }
