@@ -17,9 +17,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * * @author Julius Neimantas
- * 
- *
+ * Klasse Brett: Initialisiert die Schachfiguren-Objekte, baut die Gui zusammen, prueft die Zuege der Schachfiguren
+ *  @author Julius Neimantas
  */
 
 public class Brett implements ImageObserver {
@@ -529,7 +528,7 @@ public class Brett implements ImageObserver {
 		if (test instanceof Koenigin || test instanceof Koenig) {
 
 			/**
-			 * --------diagonale Bewegung
+			 * --------diagonale Bewegung werden geprueft
 			 * 
 			 */
 
@@ -606,7 +605,7 @@ public class Brett implements ImageObserver {
 
 			/**
 			 * ----Horizontale und Vertikale Bewegung soll geprüft werden ob sich die
-			 * Koordinaten im X geändert hat, soll geprüft werden ob figuren im wege stehen
+			 * Koordinaten  X geändert hat, soll geprüft werden ob figuren im wege stehen
 			 */
 			else if (x != altX && x > altX && altY == y) {
 				/**
