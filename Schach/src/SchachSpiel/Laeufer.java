@@ -121,6 +121,7 @@ public class Laeufer extends Schachfigur {
 	}
 	/**
 	 * Methode:setX() ueberschreibt die Instanvariablen count und posX
+	 * @param i
 	 */
 	@Override
 	public void setX(int i) {
@@ -129,6 +130,7 @@ public class Laeufer extends Schachfigur {
 	}
 	/**
 	 * Methode setImg(): der Referenz img wird ein dazugehoeriges Bild zugewiesen
+	 * @param img
 	 */
 	public Image setImg(Image img) {
 		return this.img=img;

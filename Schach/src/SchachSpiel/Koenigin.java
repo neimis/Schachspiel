@@ -98,7 +98,7 @@ public class Koenigin extends Schachfigur {
 	 */
 	@Override
 	public void setY(int i) {
-		// TODO Auto-generated method stub
+		this.posY=i;
 
 	}
 

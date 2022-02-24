@@ -94,23 +94,27 @@ public class Koenig extends Schachfigur {
 
 	/**
 	 * Methode:setY() ueberschreibt die Instanvariablen count und posY
+	 * @param y - hoorizontale Zielkoordinaten 
 	 */
 	@Override
-	public void setY(int i) {
-		this.posY = i;
+	public void setY(int y) {
+		this.posY = y;
 	}
 
 	/**
 	 * Methode:setX() ueberschreibt die Instanvariablen count und posX
+	 * @param x - vertikale Zielkoordinaten
 	 */
 	@Override
-	public void setX(int i) {
-		this.posX = i;
+	public void setX(int x) {
+		this.posX = x;
 
 	}
 
 	/**
 	 * Methode setImg(): der Referenz img wird ein dazugehoeriges Bild zugewiesen
+	 * @param img - Bildreferenz auf eine Schachfigur
+	 * @return Bildreferenz des Objektes
 	 */
 	public Image setImg(Image img) {
 		return this.img = img;
