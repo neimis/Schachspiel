@@ -284,7 +284,7 @@ public class Brett implements ImageObserver {
 			/**
 			 * Methode:mouseReleased() lässt man die Maus los, so wird zuerst geprüft ob
 			 * schwarte oder weiße figuren dran sind die Ziel-Koordinaten der Schachfigur
-			 * werden in die Methode moveFigur uebergeben übergeben um zu ueberpruefen, ob
+			 * werden in die Methode moveFigur uebergeben um zu ueberpruefen, ob
 			 * der Schachzug erlaubt ist.
 			 */
 			public void mouseReleased(MouseEvent e) {
@@ -338,9 +338,8 @@ public class Brett implements ImageObserver {
 	 * aufgerufen Die Referenzen auf die geschlagene Figur werden sowohl aus der
 	 * ArrayList als auch aus dem Array entfernt
 	 * 
-	 * @param tX
-	 * @param tY tX- Zielkoordinaten horizontale Ebene tY- Zielkoordinaten vertikale
-	 *           Ebene
+	 * @param tY- Zielkoordinaten vertikale Ebene 
+	 * @param tX- Zielkoordinaten horizontale Ebene 
 	 */
 	public static void kill(int tX, int tY) {
 
